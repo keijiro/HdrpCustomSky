@@ -295,7 +295,7 @@ MonoBehaviour:
     m_Value: 0
   exposure:
     m_OverrideState: 1
-    m_Value: 2.91
+    m_Value: 4
   multiplier:
     m_OverrideState: 0
     m_Value: 1
@@ -322,16 +322,16 @@ MonoBehaviour:
     m_Value: 0
   starColor:
     m_OverrideState: 1
-    m_Value: {r: 1, g: 0.47735852, b: 0.47735852, a: 1}
+    m_Value: {r: 0.54339623, g: 0.84439015, b: 1, a: 1}
     hdr: 0
     showAlpha: 1
     showEyeDropper: 1
   horizonPower:
-    m_OverrideState: 0
-    m_Value: 10
+    m_OverrideState: 1
+    m_Value: 50
   polarPower:
-    m_OverrideState: 0
-    m_Value: 10
+    m_OverrideState: 1
+    m_Value: 18
 --- !u!114 &-420815432827605957
 MonoBehaviour:
   m_ObjectHideFlags: 3
