@@ -1,4 +1,4 @@
-Shader "Hidden/HDRP/Sky/DarkSky"
+Shader "Hidden/HdrpExtra/Sky/DarkSky"
 {
     HLSLINCLUDE
 

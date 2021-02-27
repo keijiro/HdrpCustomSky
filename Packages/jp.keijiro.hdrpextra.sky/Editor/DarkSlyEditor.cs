@@ -2,7 +2,7 @@ using UnityEditor;
 using UnityEditor.Rendering;
 using UnityEditor.Rendering.HighDefinition;
 
-namespace DxrCrystal.Editor {
+namespace HdrpExtra.Sky.Editor {
 
 [CanEditMultipleObjects]
 [VolumeComponentEditor(typeof(DarkSky))]
@@ -38,4 +38,4 @@ class DarkSkySettingsEditor : SkySettingsEditor
     }
 }
 
-} // namespace DxrCrystal
+} // namespace HdrpExtra.Sky.Editor

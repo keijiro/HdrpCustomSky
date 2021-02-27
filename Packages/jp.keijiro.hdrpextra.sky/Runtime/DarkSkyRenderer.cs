@@ -2,7 +2,7 @@ using UnityEngine;
 using UnityEngine.Rendering;
 using UnityEngine.Rendering.HighDefinition;
 
-namespace DxrCrystal {
+namespace HdrpExtra.Sky {
 
 public class DarkSkyRenderer : SkyRenderer
 {
@@ -20,7 +20,7 @@ public class DarkSkyRenderer : SkyRenderer
     MaterialPropertyBlock _props = new MaterialPropertyBlock();
 
     static Shader GetShader()
-      => Resources.Load<Shader>("DarkSky");
+      => Resources.Load<Shader>("HdrpExtraDarkSky");
 
     #endregion
 
@@ -59,4 +59,4 @@ public class DarkSkyRenderer : SkyRenderer
     #endregion
 }
 
-} // namespace DxrCrystal
+} // namespace HdrpExtra.Sky

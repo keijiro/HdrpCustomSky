@@ -2,7 +2,7 @@ using UnityEngine;
 using UnityEngine.Rendering;
 using UnityEngine.Rendering.HighDefinition;
 
-namespace DxrCrystal {
+namespace HdrpExtra.Sky {
 
 [VolumeComponentMenu("Sky/Dark Sky"), SkyUniqueID(UNIQUE_ID)]
 public class DarkSky : SkySettings
@@ -16,7 +16,7 @@ public class DarkSky : SkySettings
     #region Sky attributes
 
     public ColorParameter starColor =
-      new ColorParameter(Color.white, true, false, true);
+      new ColorParameter(Color.white);
 
     public FloatParameter horizonPower =
       new FloatParameter(10);
@@ -40,4 +40,4 @@ public class DarkSky : SkySettings
     #endregion
 }
 
-} // namespace DxrCrystal
+} // namespace HdrpExtra.Sky
