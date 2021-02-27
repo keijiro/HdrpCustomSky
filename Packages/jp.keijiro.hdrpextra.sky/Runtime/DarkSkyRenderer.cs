@@ -9,6 +9,8 @@ public class DarkSkyRenderer : SkyRenderer
     #region Property ID
 
     readonly int StarColorID = Shader.PropertyToID("_StarColor");
+    readonly int ForeColorID = Shader.PropertyToID("_ForeColor");
+    readonly int BackColorID = Shader.PropertyToID("_BackColor");
     readonly int SkyParamsID = Shader.PropertyToID("_SkyParams");
     readonly int PC2ViewID = Shader.PropertyToID("_PixelCoordToViewDirWS");
 
@@ -48,6 +50,8 @@ public class DarkSkyRenderer : SkyRenderer
            settings.polarPower.value);
 
         _props.SetColor(StarColorID, settings.starColor.value);
+        _props.SetColor(ForeColorID, settings.foreColor.value);
+        _props.SetColor(BackColorID, settings.backColor.value);
         _props.SetVector(SkyParamsID, skyParams);
         _props.SetMatrix(PC2ViewID, builtinParams.pixelCoordToViewDirMatrix);
 

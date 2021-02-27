@@ -11,6 +11,8 @@ class DarkSkySettingsEditor : SkySettingsEditor
     SerializedDataParameter _starColor;
     SerializedDataParameter _horizonPower;
     SerializedDataParameter _polarPower;
+    SerializedDataParameter _foreColor;
+    SerializedDataParameter _backColor;
 
     public override void OnEnable()
     {
@@ -26,6 +28,8 @@ class DarkSkySettingsEditor : SkySettingsEditor
         _starColor    = Unpack(o.Find(x => x.starColor));
         _horizonPower = Unpack(o.Find(x => x.horizonPower));
         _polarPower   = Unpack(o.Find(x => x.polarPower));
+        _foreColor    = Unpack(o.Find(x => x.foreColor));
+        _backColor    = Unpack(o.Find(x => x.backColor));
     }
 
     public override void OnInspectorGUI()
@@ -33,6 +37,8 @@ class DarkSkySettingsEditor : SkySettingsEditor
         PropertyField(_starColor);
         PropertyField(_horizonPower);
         PropertyField(_polarPower);
+        PropertyField(_foreColor);
+        PropertyField(_backColor);
 
         base.CommonSkySettingsGUI();
     }

@@ -7,6 +7,8 @@ Shader "Hidden/HdrpExtra/Sky/DarkSky"
     #include "Packages/com.unity.render-pipelines.high-definition/Runtime/Sky/SkyUtils.hlsl"
 
     float3 _StarColor;
+    float3 _ForeColor;
+    float3 _BackColor;
     float4 _SkyParams;
 
     float3x3 GetRotationMatrix()
@@ -32,6 +34,8 @@ Shader "Hidden/HdrpExtra/Sky/DarkSky"
         float3 color = _StarColor * _SkyParams.x * exposure;
         color *= pow(saturate(1 - abs(y)), _SkyParams.z);
         color *= pow(abs(z), _SkyParams.w);
+
+        color += lerp(_BackColor, _ForeColor, 0.5 - viewDirWS.z / 2);
 
         return float4(ClampToFloat16Max(color), 1);
     }
