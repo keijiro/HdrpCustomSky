@@ -1,12 +1,12 @@
 {
   "author": "Keijiro Takahashi",
-  "dependencies": { "com.unity.render-pipelines.high-definition": "10.0.0" },
+  "dependencies": { "com.unity.render-pipelines.high-definition": "14.0.0" },
   "description": "Stylized procedural sky renderers for HDRP.",
   "displayName": "HDRP Custom Sky",
   "keywords": [ "unity" ],
   "license": "Unlicense",
   "name": "jp.keijiro.hdrpextra.sky",
-  "unity": "2020.2",
+  "unity": "2022.3",
   "unityRelease": "0f1",
-  "version": "0.0.1"
+  "version": "1.0.0"
 }
