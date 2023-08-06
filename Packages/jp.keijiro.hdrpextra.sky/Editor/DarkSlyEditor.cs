@@ -5,7 +5,7 @@ using UnityEditor.Rendering.HighDefinition;
 namespace HdrpExtra.Sky.Editor {
 
 [CanEditMultipleObjects]
-[VolumeComponentEditor(typeof(DarkSky))]
+[CustomEditor(typeof(DarkSky))]
 class DarkSkySettingsEditor : SkySettingsEditor
 {
     SerializedDataParameter _starColor;
