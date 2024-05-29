@@ -509,7 +509,7 @@ MonoBehaviour:
     m_Value: 0
   exposure:
     m_OverrideState: 1
-    m_Value: 4
+    m_Value: 2.96
   multiplier:
     m_OverrideState: 0
     m_Value: 1
@@ -533,7 +533,7 @@ MonoBehaviour:
     m_Value: 0
   starColor:
     m_OverrideState: 1
-    m_Value: {r: 0.37358493, g: 0.83287877, b: 1, a: 1}
+    m_Value: {r: 1.1324977, g: 2.5248163, b: 3.031433, a: 1}
   horizonPower:
     m_OverrideState: 1
     m_Value: 40
@@ -542,10 +542,10 @@ MonoBehaviour:
     m_Value: 30
   foreColor:
     m_OverrideState: 1
-    m_Value: {r: 0.11320752, g: 0, b: 0, a: 1}
+    m_Value: {r: 0.056999996, g: 0, b: 0, a: 1}
   backColor:
     m_OverrideState: 1
-    m_Value: {r: 0, g: 0.09433961, b: 0.045466777, a: 1}
+    m_Value: {r: 0, g: 0.059, b: 0.0295, a: 1}
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0

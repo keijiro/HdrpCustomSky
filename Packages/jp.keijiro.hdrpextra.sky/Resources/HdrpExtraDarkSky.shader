@@ -31,11 +31,13 @@ Shader "Hidden/HdrpExtra/Sky/DarkSky"
         float y = viewDirWS.y;
         float z = max(0, -viewDirWS.z);
 
-        float3 color = _StarColor * _SkyParams.x * exposure;
+        exposure *= _SkyParams.x;
+
+        float3 color = _StarColor * exposure;
         color *= pow(saturate(1 - abs(y)), _SkyParams.z);
         color *= pow(abs(z), _SkyParams.w);
 
-        color += lerp(_BackColor, _ForeColor, 0.5 - viewDirWS.z / 2);
+        color += lerp(_BackColor, _ForeColor, 0.5 - viewDirWS.z / 2) * exposure;
 
         return float4(ClampToFloat16Max(color), 1);
     }

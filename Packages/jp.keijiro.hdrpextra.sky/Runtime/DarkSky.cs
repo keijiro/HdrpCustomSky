@@ -16,7 +16,7 @@ public class DarkSky : SkySettings
     #region Sky attributes
 
     public ColorParameter starColor =
-      new ColorParameter(Color.white, false, false, true);
+      new ColorParameter(Color.white, true, false, true);
 
     public FloatParameter horizonPower =
       new FloatParameter(10);
@@ -25,10 +25,10 @@ public class DarkSky : SkySettings
       new FloatParameter(10);
 
     public ColorParameter foreColor =
-      new ColorParameter(Color.black, false, false, true);
+      new ColorParameter(Color.black, true, false, true);
 
     public ColorParameter backColor =
-      new ColorParameter(Color.black, false, false, true);
+      new ColorParameter(Color.black, true, false, true);
 
     #endregion
 
